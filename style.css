@@ -117,4 +117,7 @@ span.favorable{
         display: flex;
         width: 100%;
     }
+    .form-input{
+        border: none;
+        max-width: 100px;
   }
