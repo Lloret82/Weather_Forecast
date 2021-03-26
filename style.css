@@ -1,15 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+
+
 body{
     
     background-image: url(./sky2.jpg);
     align-content: center;
+    font-family: 'New Tegomin', serif;
 }
 
-.main-cont{
-margin: 0 auto;
+.list{
+    margin: 0 auto;
+}
+
+.form-input{
+    border: none;
 }
 
 .header{
-        background-image: linear-gradient(to right, white,black);
+        background-color: rgba(255,255,255,0.5);;
         text-align: center;
         width: 100%;
         height: auto;
@@ -18,7 +26,7 @@ margin: 0 auto;
         position: relative;
         overflow: hidden;
         border-radius: 0 0 85% 85% / 30%;
-        color: white;
+        color: black;
         margin-bottom: 50px;
     
 }
@@ -56,6 +64,7 @@ margin: 0 auto;
 
 #searched-city{
     text-align: center;
+    text-transform: uppercase;
 }
 
 #forecast{
