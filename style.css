@@ -65,6 +65,7 @@ body{
 #searched-city{
     text-align: center;
     text-transform: uppercase;
+    padding: 50px;
 }
 
 #forecast{
