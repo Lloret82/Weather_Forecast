@@ -116,4 +116,7 @@ span.favorable{
     .form-city{
         margin-left: 0;
     }
+    .header{
+        width: 100%;
+    }
   }

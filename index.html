@@ -14,14 +14,14 @@
         <h1>Weather Forecast</h1>
     </header>
     <main class="container-fluid main-cont">
-        <div class = "row flex-wrap">
-            <div class="d-flex col-6 p-2 search-column search flex-wrap">
+        <div class = "row">
+            <div class="col-6 p-2 search-column search">
                 <form class = "p-2 form-city d-flex justify-content-center flex-wrap" id = "city-search-form">
-                    <h4>Search for a City</h4>
-                    <input id="city" type = "text" autofocus = "true" class = "form-input d-flex flex-wrap"/>
+                    
+                    <input id="city" type = "text" autofocus = "true" class = "form-input d-flex flex-wrap" placeholder="City Search"/>
                     <button class = "btn btn-primary d-flex" type = "submit">Search</button>
                 </form>
-                <div class = "past-search" id = "past-search-buttons"></div>
+                <div class = "past-search d-flex flex-wrap" id = "past-search-buttons"></div>
             </div>
             <div class="col-12 col-md-9">
                 <div class = "row  selected-city" id = "current-forecast">
