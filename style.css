@@ -13,6 +13,7 @@ body{
 
 .form-input{
     border: none;
+    
 }
 
 .header{
@@ -33,14 +34,15 @@ body{
     background-color: rgba(255,255,255,0.5);
     margin: 0 auto;
     color: white;
+    display: block;
 }
 
 .form-city h4{
     padding: 5px;
-    margin-right: 20px;
+    margin-left: 100px;
 }
 .btn{
-    margin-left: 20px;
+    margin-left: 0 auto;
     background-color: red;
     border: none;
 }
@@ -99,3 +101,19 @@ span.favorable{
     display: flex;
     justify-content: center;
 }
+
+@media screen and (max-width: 600px) {
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      flex-basis: auto;
+      max-width: 400px;
+    }
+    .btn{
+        margin-top: 20px;
+    }
+    .form-city{
+        margin-left: 0;
+    }
+  }

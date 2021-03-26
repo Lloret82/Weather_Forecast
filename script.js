@@ -4,7 +4,8 @@ var getWeather = function (city) {
 
     fetch(apiURL)
         .then(function (response) {
-            response.json().then(function (data) {
+            response.json()
+            .then(function (data) {
                 displayWeather(data, city);
             });
         });
@@ -56,7 +57,7 @@ var displayWeather = function (weather, searchCity) {
     citySearchInputEl.appendChild(weatherIcon);
 
     var temperatureEl = document.createElement("span");
-    temperatureEl.textContent = "Temp: " + weather.main.temp + " °C";
+    temperatureEl.textContent = "Temp: " + Math.round(weather.main.temp) + " °C";
     temperatureEl.classList = "list-group-item"
 
     var humidityEl = document.createElement("span");
@@ -176,11 +177,11 @@ var pastSearch = function (pastSearch) {
     pastSearchEl.setAttribute("data-city", pastSearch)
     pastSearchEl.setAttribute("type", "submit");
 
-    pastSearchButtonEl.prepend(pastSearchEl);
+    pastSearchButtonEl.append(pastSearchEl);
 }
 
 
-var pastSearchHandler = function (event) {
+var previousCitySearch = function (event) {
     var city = event.target.getAttribute("data-city")
     if (city) {
         getWeather(city);
@@ -190,4 +191,4 @@ var pastSearchHandler = function (event) {
 
 
 cityFormEl.addEventListener("submit", formSubmit);
-pastSearchButtonEl.addEventListener("click", pastSearchHandler);
+pastSearchButtonEl.addEventListener("click", previousCitySearch);
