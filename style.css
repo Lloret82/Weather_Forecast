@@ -13,6 +13,7 @@ body{
 
 .form-input{
     border: none;
+    max-width: 100px;
     
 }
 
@@ -37,10 +38,6 @@ body{
     display: block;
 }
 
-.form-city h4{
-    padding: 5px;
-    margin-left: 100px;
-}
 .btn{
     margin-left: 0 auto;
     background-color: red;
@@ -117,6 +114,7 @@ span.favorable{
         margin-left: 0;
     }
     .header{
+        display: flex;
         width: 100%;
     }
   }
