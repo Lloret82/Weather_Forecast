@@ -2,9 +2,8 @@
 
 
 body{
-    
+    width: 100%;
     background-image: url(./sky2.jpg);
-    align-content: center;
     font-family: 'New Tegomin', serif;
 }
 
@@ -31,7 +30,6 @@ body{
     
 }
 .search-column{
-    /* background-image: linear-gradient(to right, white,black); */
     background-color: rgba(255,255,255,0.5);
     margin: 0 auto;
     color: white;
@@ -39,6 +37,7 @@ body{
 
 .form-city h4{
     padding: 5px;
+    margin-right: 20px;
 }
 .btn{
     margin-left: 20px;
@@ -62,7 +61,10 @@ body{
 }
 
 #searched-city{
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-basis: auto;
+    justify-content: center;
     text-transform: uppercase;
     padding: 50px;
 }
@@ -73,9 +75,7 @@ body{
 }
 
 
-/* .card-body{
-    flex:auto
-} */
+
 
 span.severe{
     padding: 3px;
@@ -93,4 +93,9 @@ span.favorable{
     padding: 3px;
     background-color: green;
     color:black;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
 }
