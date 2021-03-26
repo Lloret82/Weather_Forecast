@@ -1,0 +1,87 @@
+body{
+    
+    background-image: url(./sky2.jpg);
+    align-content: center;
+}
+
+.main-cont{
+margin: 0 auto;
+}
+
+.header{
+        background-image: linear-gradient(to right, white,black);
+        text-align: center;
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+        overflow: hidden;
+        border-radius: 0 0 85% 85% / 30%;
+        color: white;
+        margin-bottom: 50px;
+    
+}
+.search-column{
+    /* background-image: linear-gradient(to right, white,black); */
+    background-color: rgba(255,255,255,0.5);
+    margin: 0 auto;
+    color: white;
+}
+
+.form-city h4{
+    padding: 5px;
+}
+.btn{
+    margin-left: 20px;
+    background-color: red;
+    border: none;
+}
+.btn:hover{
+    transform: scale(1.1);
+    background-color: red;
+
+}
+
+.list-group-item{
+    line-height: 1.5;
+    border: none;
+    text-align: center;
+    font-size: 30px;
+    /* background-image: linear-gradient(to right, white,black); */
+    background-color: rgba(255,255,255,0.5);
+    color: black;
+
+}
+
+#searched-city{
+    text-align: center;
+}
+
+#forecast{
+    text-align: center;
+    padding: 50px;
+}
+
+
+/* .card-body{
+    flex:auto
+} */
+
+span.severe{
+    padding: 3px;
+    background-color: red;
+    color:black;
+}
+
+span.moderate{
+    padding: 3px;
+    background-color: yellow;
+    color: black;
+}
+
+span.favorable{
+    padding: 3px;
+    background-color: green;
+    color:black;
+}
