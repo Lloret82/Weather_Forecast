@@ -34,7 +34,7 @@ A simple dashboard using OpenWeather API to retrieve weather data for cities tha
 ## Screenshots
 
 
- ![Live page Picture](/sshot.png)
+ ![Live page Picture](./assets/img/sshot.png)
 
 
 ## Installation
