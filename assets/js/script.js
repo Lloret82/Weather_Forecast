@@ -37,14 +37,19 @@ var formSubmit = function (event) {
         alert("Please enter a City");
     }
     store();
+    event.preventDefault();
     pastSearch(city);
 }
 
 // store to local storage
 
 var store = function () {
+    
     localStorage.setItem("cities", JSON.stringify(cities));
+    
 };
+
+
 
 //function to display the weather
 
@@ -141,7 +146,7 @@ var fiveDays = function (city) {
 var display5Day = function (weather) {
     forecastContainerEl.textContent = ""
     forecastTitle.textContent = "Next Day Forecast:";
-
+//every new day
     var forecast = weather.list;
     for (var i = 5; i != forecast.length; i = i += 8) {
         var dailyForecast = forecast[i];
@@ -199,6 +204,7 @@ var previousCitySearch = function (event) {
     if (city) {
         getWeather(city);
         fiveDays(city);
+        
     }
 }
 
