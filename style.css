@@ -122,4 +122,8 @@ span.favorable{
         border: none;
         max-width: 110px;
   }
+
+  #searched-city{
+      font-size: 18px;
+  }
 }
