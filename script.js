@@ -48,13 +48,13 @@ var displayWeather = function (weather, searchCity) {
 
 
 
-    var currentDate = document.createElement("h2")
-    currentDate.textContent = " (" + moment(weather.dt.value).format("D MMM,YY") + ") ";
+    var currentDate = document.createElement("span")
+    currentDate.textContent = " (" + moment(weather.dt.value).format("D MMMM, YYYY") + ") ";
     citySearchInputEl.appendChild(currentDate);
 
     var weatherIcon = document.createElement("img")
     weatherIcon.setAttribute("src", `https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`);
-    citySearchInputEl.prepend(weatherIcon);
+    citySearchInputEl.appendChild(weatherIcon);
 
     var temperatureEl = document.createElement("span");
     temperatureEl.textContent = "Temp: " + Math.round(weather.main.temp) + " °C";
